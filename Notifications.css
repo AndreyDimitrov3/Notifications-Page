@@ -1,0 +1,218 @@
+*{
+    font-family: 'Plus Jakarta Sans';
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color: hsl(210, 60%, 98%);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 666px;
+    max-width: 100%;
+    padding: 32px 30px 0 30px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.notifications-top-holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.notifications-top{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.notifications-p{
+    font-size: 24px;
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+}
+
+.notifications-number{
+    font-weight: 500;
+    padding: 2px 11px;
+    border-radius: 6px;
+    color: white;
+    background-color: hsl(219, 85%, 26%);
+}
+
+.all-read{
+    font-weight: 500;
+    color: hsl(219, 12%, 42%);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.all-read:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+.unreadNotification{
+    border-radius: 12px;
+    background-color: hsl(210, 60%, 98%);
+    cursor: pointer;
+}
+
+.comment-holder{
+    display: flex;
+    align-items: flex-start;
+    padding: 18px;
+    gap: 20px;
+}
+
+.avatar{
+    width: 45px;
+    height: 45px;
+}
+
+.p-holder{
+    font-weight: 500;
+    color: hsl(219, 12%, 42%);
+}
+
+.heading{
+    margin-right: 4px;
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.heading:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+.highlight{
+    margin-left: 4px;
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.highlight:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+.circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 4px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+}
+
+.time-posted{
+    font-weight: 500;
+    color: hsl(219, 12%, 42%);
+}
+
+.rizky{
+    flex-direction: column;
+}
+
+.details-rizky{
+    display: flex;
+    gap: 20px;
+}
+
+.rizky-p{
+    font-weight: 500;
+    margin-left: 65px;
+    padding: 16px 20px;
+    border: 1px solid hsl(219, 12%, 42%, 0.3);
+    border-radius: 6px;
+    color: hsl(219, 12%, 42%);
+    cursor: pointer;
+    transition: 0.4s
+}
+
+.rizky-p:hover{
+    background-color: hsl(211, 68%, 94%);
+}
+
+.kimberly-image{
+    width: 44px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-height: 875px){
+    body{
+        justify-content: normal;
+        height: auto;
+    }
+
+    .main{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-height: 835px){
+    .main{
+        height: 100%;
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    .main{
+        width: auto;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .main{
+        padding: 32px 14px 0 14px;
+    }
+
+    .comment-holder{
+        padding: 18px 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main {
+        padding: 32px 8px 0 8px;
+    }
+
+    .comment-holder {
+        padding: 18px 6px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .notifications-p{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .notifications-p {
+        font-size: 20px;
+    }
+}
